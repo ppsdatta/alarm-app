@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'dart:html';
+//import 'dart:html';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   String _text = 'You have got';
   bool _running = true;
-  final int _countDownValue = 60 * 2;
+  final int _countDownValue = 60 * 1;
 
   void _incrementCounter() {
     Timer.periodic(Duration(seconds: 1), (timer) {
