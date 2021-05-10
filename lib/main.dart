@@ -112,6 +112,11 @@ class _MyHomePageState extends State<MyHomePage> {
       if (_countDownValue - _counter <= 30) {
         if (!kIsWeb) {
           FlutterBeep.beep();
+        }
+      }
+
+      if (_countDownValue - _counter <= 10) {
+        if (!kIsWeb) {
           Vibration.vibrate();
         }
       }
