@@ -103,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
         return;
       }
 
-      if (timer.tick >= _countDownValue) {
+      if (_counter >= _countDownValue) {
         timer.cancel();
         setState(() {
           _counter = 0;
