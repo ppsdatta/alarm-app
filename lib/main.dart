@@ -6,6 +6,7 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_beep/flutter_beep.dart';
+import 'package:vibration/vibration.dart';
 
 void main() {
   runApp(MyApp());
@@ -111,6 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
       if (_countDownValue - _counter <= 30) {
         if (!kIsWeb) {
           FlutterBeep.beep();
+          Vibration.vibrate();
         }
       }
     });
